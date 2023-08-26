@@ -1,0 +1,122 @@
+@media (max-width: 768px) {
+    /* Gaya untuk layar lebar maksimal 768px */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+
+    header {
+    background-color: #c1ab9b;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    }
+
+    nav {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    }
+
+    main {
+    padding: 20px;
+    }
+
+    footer {
+    background-color: #c1ab9b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    }
+
+    article {
+        width: 50%;
+        padding-left: 10px;
+        margin-left: 10px;
+        float: left;
+        font-style: italic;
+        background-color: lightgray;
+    }
+.header-content{
+    border-radius: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav{
+    float: left;
+}
+
+.container-navbar {
+    width: 100%;
+    height : 70px;
+}
+
+.ul-navbar {
+    justify-content: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.li-navbar {
+    list-style-type: none;
+    padding : 10px;
+    COLOR : rgb(255, 255, 255);
+    font-size: 20 px;
+}
+
+@media (max-width: 768px) {
+    .ul-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .li-navbar {
+        padding: 5px 0;
+        text-align: left;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .nav {
+        width: 100%;
+        float: none;
+    }
+
+    article {
+        width: 100%;
+        float: none;
+        padding-left: 0;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .li-navbar {
+        padding: 8px 15px;
+    }
+}
+
+.nav {
+    max-width: 100%;
+    height: auto;
+}
+
+.right-sidebar{
+    
+}
