@@ -1,86 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Desweb Tirzah</title>
-        <link rel ="stylesheet" href="style.css"/>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <header>
-            <img src="logo.jpg" height="45px" width="45px" class="header-content"/>
-        </header>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-        <nav class="ul-navbar">
-            <ul>
-                <li class="li-navbar">
-                    <a href="#" class= "a-navbar">HOME</a>
-                </li>
-                <li class="li-navbar">
-                    <a href="about.html" class= "a-navbar">ABOUT ME</a>
-                </li>
-                <li class="li-navbar">
-                    <a href="contact.html" class= "a-navbar">CONTACT ME</a>
-                </li>
-            </ul>
-        </nav>
+header {
+    background-color: #c1ab9b;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+}
 
-        <div class="content-wrapper">
-            <div class="content-column">
-                <!-- konten 1 -->
-                <article>
-                    <div class="container">
-                        <img src="kucing.jpg" class="nav"/>
-                        <div>
-                            <h3>Manusia dan Kucing</h3>
-                            <p>Seorang perempuan muda dengan rambut hitam panjang dan mata berbinar dengan penuh kasih sayang, terlihat tersenyum lembut...</p>
-                        </div>
-                    </div>
-                </article>
+nav.ul-navbar {
+    background-color: #c1ab9b;
+    padding: 10px;
+    text-align: center;
+}
 
-                <!-- konten 2 -->
-                <article>
-                    <div class="container">
-                        <img src="anjing.jpg" class="nav"/>
-                        <div>
-                            <h3>Manusia dan Kucing</h3>
-                            <p>Potret seperti ini sering kali menghadirkan manusia dan anjing dalam berbagai ekspresi dan pose yang mencerminkan hubungan unik mereka. Manusia dapat menunjukkan ekspresi kasih sayang, kebahagiaan, atau kesenangan dalam berinteraksi dengan anjing mereka. Sementara itu, anjing peliharaan seringkali menunjukkan ekspresi setia, kegembiraan, atau kenyamanan saat berada di dekat manusia.
+footer {
+    background-color: #c1ab9b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 
-                                Foto semacam ini tidak hanya menggambarkan interaksi harian antara manusia dan anjing, tetapi juga dapat menjadi bentuk dokumentasi akan ikatan kuat dan saling pengertian antara kedua makhluk tersebut. Potret ini juga dapat menggambarkan bagaimana manusia dan anjing memperkaya kehidupan satu sama lain dan membentuk ikatan yang penuh emosi dan kesetiaan.</p>
-                        </div>
-                    </div>
-                </article>
-            </div>
+.a-navbar{
+    color: white;
+    text-decoration: none;
 
-            <div class="content-column">
-                <!-- konten 3 -->
-                <article>
-                    <div class="container">
-                        <img src="spy.jpg" class="nav"/>
-                        <div>
-                            <h3>Spy x Family</h3>
-                            <p>"Spy x Family" adalah sebuah manga Jepang yang sangat populer yang ditulis dan diilustrasikan oleh Tatsuya Endo. Pada saat pemutakhiran pengetahuan saya pada September 2021, manga ini telah menerima banyak pujian karena alur cerita yang menarik, karakter yang menarik, dan kombinasi genre yang unik. Namun, saat itu belum ada adaptasi anime resmi untuk "Spy x Family," jadi saya tidak memiliki informasi terbaru tentang kemungkinan adaptasi tersebut setelah September 2021.Cerita ini menggabungkan elemen drama keluarga, komedi, dan aksi dengan sangat baik, menciptakan dinamika menarik antara karakter-karakter yang sebenarnya sangat berbeda.
+}
 
-                                "Spy x Family" terkenal karena memadukan konsep-konsep yang tidak biasa, seperti mata-mata, ahli psikometri, dan hubungan keluarga palsu. Ini menciptakan cerita yang menghibur dan penuh dengan momen-momen menegangkan, lucu, dan emosional, yang telah membuatnya populer di kalangan pembaca manga di seluruh dunia.</p>
-                        </div>
-                    </div>
-                </article>
+.li-navbar{
+    display: inline-block;
+    padding: auto;
+}
 
-                <!-- konten 4 -->
-                <article>
-                    <div class="container">
-                        <img src="kimi no nawa.jpg" class="nav"/>
-                        <div>
-                            <h3>Kimi No Na Wa</h3>
-                            <p>"Kimi no Na wa" (bahasa Inggris: "Your Name") adalah sebuah film anime Jepang yang dirilis pada tahun 2016, yang disutradarai oleh Makoto Shinkai. Film ini mendapat banyak pujian karena visual yang indah, alur cerita yang menarik, dan penggambaran emosional yang kuat. Ini juga menjadi salah satu film anime yang sangat sukses secara komersial dan kritis di seluruh dunia.Cerita ini juga mengeksplorasi tema seperti takdir, keterhubungan emosional, dan arti cinta dalam konteks hubungan yang luar biasa dan sulit dijelaskan. Film ini mengemas emosi yang kuat dalam penggambaran karakter dan alur cerita yang kompleks.</p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
+.li-navbar:hover{
+    background-color: rgba(87, 81, 81, 0.438);
+    transition: .2s ease-in-out;
+    transition-delay: .2s;
+    border-radius: 30px;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -ms-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+}
 
-        <footer>
-            <p>&copy; 2023 Desweb Tirzah. All Rights Reserved.</p>
-        </footer>
-    </body>
-</html>
+.header-content {
+    border-radius: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content-column {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.container {
+    border-radius: 15px;
+    display: flex;  
+    align-items: center;
+    padding: 20px;
+    background-color: lightgray;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.nav {
+    border-radius: 100px;
+    max-width: 150px;  
+    height: auto;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.container > div {
+    flex: 1;
+    padding-left: 15px;
+}
+
+.ul-navbar ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+}
+
+.ul-navbar li {
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    .content-column {
+        width: 100%;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .nav {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .ul-navbar li {
+        padding: 8px 15px;
+    }
+}
